@@ -4,6 +4,8 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using Excel = Microsoft.Office.Interop.Excel;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -48,11 +50,40 @@ namespace かわせみ検索v0
         }
 
         private void Button4_Click(object sender, EventArgs e)
+            //「リスト表示」ボタン押し下げ時
+        {
+            Form2 f = new Form2();
+            f.Show();
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            //「ファイル更新」ボタン押し下げ時
+            Form2 f = new Form2();
+            f.Show();
+        }
+        // ----------------------------------------------------------
+        private void label36_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void Button2_Click(object sender, EventArgs e)
+        private void label37_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label34_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Org_NAMEyomi_box_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label24_Click(object sender, EventArgs e)
         {
 
         }

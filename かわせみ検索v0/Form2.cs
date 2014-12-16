@@ -42,9 +42,27 @@ namespace かわせみ検索v0
             //2次元配列ar[row,columun]を設定します。
             string[,] ar = new string[nx.maxx+20, nx.maxy+20];
             string[,] col = new string[nx.maxfx+10, 2];
-            //string[,] index = new string[nx.maxfy+10];
+            string[] skip_n = new string[]{
+                "1",  //A
+                "1",  //B
+                "0",  //C
+                "1",  //D
+                "1",  //E
+                "1",  //F
+                "1",  //G
+                "1",  //H
+                "1",  //I
+                "1",  //J
+                "1",  //K
+                "1",  //L
+                "1",  //M
+                "1",  //N
+                "1",  //O
+                "1",  //P
+                "1",  //Q
+                };
 
-            
+
             //Excelアプリケーションオブジェクトを作成します。アプリケーションウィンドウは非表示にします。
             ExcelApp.Visible = false;
             
@@ -55,16 +73,34 @@ namespace かわせみ検索v0
             Worksheet ws1 = wb.Sheets[1];
             ws1.Select(Type.Missing);
 
+            int fake_x = 0;
+            int fake_y = 0;
             for (int x = 1; x < nx.maxx; x++)
                 {
-                        Range index = ws1.Cells[1, x];
-                        dynamic val = index.Value2;
+                        //Range index = ws1.Cells[1, x];
+                        //dynamic val = index.Value2;
                         // arr[x, y] += x.ToString() + "-" + y.ToString() + Convert.ToString(val);
-                        col[x - 1, 0] += Convert.ToString(val);
+                        //col[x - 1, 0] += Convert.ToString(val);
+
+                        if (skip_n[x] == "0")
+                        //非表示スイッチが0の場合
+                        {
+                        //    Range index = ws1.Cells[1, x];
+                        //    dynamic val = index.Value2;
+                        }
+                        else
+                        //非表示スイッチが1の場合
+                        {
+                            Range index = ws1.Cells[1, x];
+                            dynamic val = index.Value2;
+                            //ar[x, fake_y - 1] += fake_x+Convert.ToString(val) + skip_n[x];
+                            col[fake_x, 0] += Convert.ToString(val);
+                            fake_x++; //スキップ列番号を増やす
+                        }
 
                 }
             
-            int fake_y = 0;
+
             for (int y = 2; y < nx.maxy; y++)
             {
                 Range rgn = ws1.Cells[y, 1];
@@ -79,15 +115,29 @@ namespace かわせみ検索v0
                 }
                 else
                 {
-                fake_y++;
-                
-                   for (int x = 1; x < nx.maxx; x++)
+                fake_y++; //スキップ行番号を増やす
+                fake_x = 0;
+                   for (int x = 0; x < nx.maxx; x++)
                     {
-                     Range index = ws1.Cells[y, x];
-                     dynamic val = index.Value2;
-                     // arr[x, y] += x.ToString() + "-" + y.ToString() + Convert.ToString(val);
-                     ar[x-1, fake_y-1] += Convert.ToString(val);
-
+                       if (skip_n[x] == "0")
+                           //非表示スイッチが0の場合
+                       {
+                           //Range index = ws1.Cells[y, x+1];
+                           //dynamic val = index.Value2;
+                           // arr[x, y] += x.ToString() + "-" + y.ToString() + Convert.ToString(val);
+                           //ar[x, fake_y - 1] += fake_x + Convert.ToString(val) + skip_n[x] + fake_x;
+                           //ar[x, fake_y - 1] += fake_x + Convert.ToString(val) + skip_n[x] + fake_x;
+ 
+                       }
+                       else
+                           //非表示スイッチが1の場合
+                       {
+                           Range index = ws1.Cells[y, x+1];
+                           dynamic val = index.Value2; 
+                           //ar[x, fake_y - 1] += fake_x+Convert.ToString(val) + skip_n[x];
+                           ar[fake_x, fake_y - 1] += Convert.ToString(val);
+                           fake_x++; //スキップ列番号を増やす
+                       }
                     }
                 }
 

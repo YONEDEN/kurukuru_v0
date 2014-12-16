@@ -26,12 +26,12 @@ namespace かわせみ検索v0
 
             //最大テーブル大きさ
             public static int maxx = 10;　//項目数
-            public static int maxy = 100;　//件数
+            public static int maxy = 250;　//件数
             //訂正後テーブル大きさ
             public static int maxfx = 10;　//項目数
-            public static int maxfy = 100;　//件数        
+            public static int maxfy = 250;　//件数        
         }
-
+    //読み込みボタンよりExcelから読み込みます
         private void button1_Click_1(object sender, EventArgs e)
         {
             Microsoft.Office.Interop.Excel.Application ExcelApp = new Microsoft.Office.Interop.Excel.Application();
@@ -77,7 +77,7 @@ namespace かわせみ検索v0
                      Range index = ws1.Cells[y, x];
                      dynamic val = index.Value2;
                      // arr[x, y] += x.ToString() + "-" + y.ToString() + Convert.ToString(val);
-                     ar[x+1, fake_y] += Convert.ToString(val);
+                     ar[x-1, fake_y] += Convert.ToString(val);
 
                     }
                 }

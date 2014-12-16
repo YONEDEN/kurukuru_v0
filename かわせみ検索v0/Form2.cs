@@ -26,10 +26,10 @@ namespace かわせみ検索v0
 
             //最大テーブル大きさ
             public static int maxx = 10;　//項目数
-            public static int maxy = 250;　//件数
+            public static int maxy = 50;　//件数
             //訂正後テーブル大きさ
             public static int maxfx = 10;　//項目数
-            public static int maxfy = 250;　//件数        
+            public static int maxfy = 50;　//件数        
         }
     //読み込みボタンよりExcelから読み込みます
         private void button1_Click_1(object sender, EventArgs e)
@@ -41,7 +41,7 @@ namespace かわせみ検索v0
 
             //2次元配列ar[row,columun]を設定します。
             string[,] ar = new string[nx.maxx+20, nx.maxy+20];
-            //string[,] arr = new string[nx.maxfx+10, nx.maxfy+10];
+            string[,] col = new string[nx.maxfx+10, 2];
             //string[,] index = new string[nx.maxfy+10];
 
             
@@ -55,8 +55,17 @@ namespace かわせみ検索v0
             Worksheet ws1 = wb.Sheets[1];
             ws1.Select(Type.Missing);
 
-            int fake_y = -1;
-            for (int y = 1; y < nx.maxy; y++)
+            for (int x = 1; x < nx.maxx; x++)
+                {
+                        Range index = ws1.Cells[1, x];
+                        dynamic val = index.Value2;
+                        // arr[x, y] += x.ToString() + "-" + y.ToString() + Convert.ToString(val);
+                        col[x - 1, 0] += Convert.ToString(val);
+
+                }
+            
+            int fake_y = 0;
+            for (int y = 2; y < nx.maxy; y++)
             {
                 Range rgn = ws1.Cells[y, 1];
                 dynamic val1 = rgn.Value2;
@@ -66,7 +75,7 @@ namespace かわせみ検索v0
 
                 if (t_tex == null)
                 {
-                //    ar[2, y] = "*";
+                //    なにもしない
                 }
                 else
                 {
@@ -77,7 +86,7 @@ namespace かわせみ検索v0
                      Range index = ws1.Cells[y, x];
                      dynamic val = index.Value2;
                      // arr[x, y] += x.ToString() + "-" + y.ToString() + Convert.ToString(val);
-                     ar[x-1, fake_y] += Convert.ToString(val);
+                     ar[x-1, fake_y-1] += Convert.ToString(val);
 
                     }
                 }
@@ -92,13 +101,29 @@ namespace かわせみ検索v0
 
 
 
-            int rim_y = fake_y + 1;//読み込み位置限度の設定
+            int rim_y = fake_y + 0;//読み込み位置限度の設定
 
             label1.Text = nx.maxfy.ToString()+"件読み込み、有効"+rim_y+"件";
 
 
+
+
+
             dataGridView1.ColumnCount = nx.maxx+3; //gridviewの行・列設定
-            dataGridView1.RowCount = rim_y;
+            dataGridView1.RowCount = fake_y;
+
+
+
+            //DataGridView1の行ヘッダーに行番号を表示する
+            for (int i = 0; i < nx.maxfx; i++)
+            {
+                dataGridView1.Columns[i].HeaderCell.Value = col[i, 0];
+            }
+
+            //行ヘッダーの幅を自動調節する
+            dataGridView1.AutoResizeRowHeadersWidth(
+                DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders);
+
 
             for (int y = 0; y < rim_y; y++)
             {

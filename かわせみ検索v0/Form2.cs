@@ -25,11 +25,11 @@ namespace かわせみ検索v0
             //配列のサイズを固定で設定します。
 
             //最大テーブル大きさ
-            public static int maxx = 15;　//項目数
-            public static int maxy = 10;　//件数
+            public static int maxx = 10;　//項目数
+            public static int maxy = 100;　//件数
             //訂正後テーブル大きさ
             public static int maxfx = 10;　//項目数
-            public static int maxfy = 10;　//件数        
+            public static int maxfy = 100;　//件数        
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -40,8 +40,8 @@ namespace かわせみ検索v0
             string ExcelBookFileName = @"C:\Users\淳一\Documents\Visual Studio 2013\Projects\かわせみ検索v0\かわせみ検索v0\bin\Debug\test.xlsx";
 
             //2次元配列ar[row,columun]を設定します。
-            string[,] ar = new string[nx.maxx+10, nx.maxy+10];
-            string[,] arr = new string[nx.maxfx+10, nx.maxfy+10];
+            string[,] ar = new string[nx.maxx+20, nx.maxy+20];
+            //string[,] arr = new string[nx.maxfx+10, nx.maxfy+10];
             //string[,] index = new string[nx.maxfy+10];
 
             
@@ -55,63 +55,60 @@ namespace かわせみ検索v0
             Worksheet ws1 = wb.Sheets[1];
             ws1.Select(Type.Missing);
 
-            for (int x = 1; x < nx.maxx; x++)
+            int fake_y = -1;
+            for (int y = 1; y < nx.maxy; y++)
             {
-                for (int y = 1; y < nx.maxy; y++)
+                Range rgn = ws1.Cells[y, 1];
+                dynamic val1 = rgn.Value2;
+                String t_tex = Convert.ToString(val1);
+                //ar[0, y] = y.ToString();
+                //ar[1, y] = "*"+fake_y.ToString();
+
+                if (t_tex == null)
                 {
-                    Range rgn = ws1.Cells[y, x];
-                    dynamic val = rgn.Value2;
-                    arr[x, y] += x.ToString() + "-" + y.ToString() + Convert.ToString(val);
-                    ar[x, y] += Convert.ToString(val);
+                //    ar[2, y] = "*";
                 }
+                else
+                {
+                fake_y++;
+                
+                   for (int x = 1; x < nx.maxx; x++)
+                    {
+                     Range index = ws1.Cells[y, x];
+                     dynamic val = index.Value2;
+                     // arr[x, y] += x.ToString() + "-" + y.ToString() + Convert.ToString(val);
+                     ar[x+1, fake_y] += Convert.ToString(val);
+
+                    }
+                }
+
+                
             }
             wb.Close(false); //ブッククローズ
             ExcelApp.Quit(); //Excel終了
 
 
-
       //データグリッドビューに代入
 
+
+
+            int rim_y = fake_y + 1;//読み込み位置限度の設定
+
+            label1.Text = nx.maxfy.ToString()+"件読み込み、有効"+rim_y+"件";
+
+
             dataGridView1.ColumnCount = nx.maxx+3; //gridviewの行・列設定
-            dataGridView1.RowCount = nx.maxy+3;
+            dataGridView1.RowCount = rim_y;
 
-            //定義
-            int fake_y = 1;     //読み込み位置変数の初期設定
-            int rim_y = nx.maxy;//読み込み位置限度の設定
-            String s = "";      //空白の判定用変数
-
-            for (int y = 1; y < nx.maxy; y++)
+            for (int y = 0; y < rim_y; y++)
             {
-                s = ar[1,y];//空白かどうかわからない配列を読み込み
-                //fake_y = y;
-                dataGridView1[0, y - 1].Value = fake_y;//左端に表示番号表示                
-                //dataGridView1[1, y-1].Value = arr[1, fake_y];//
-                //dataGridView1[1, y-1].Value = "*";//(成功)
-                //dataGridView1[1, fake_y-1].Value = "*";//（成功）
-                dataGridView1[1, fake_y-1].Value = "*"+arr[4,y];//(成功)
-
-                if (s == "")
-                //空白判定・空白なら
+            　　    for (int x = 0; x < nx.maxx; x++)
                     {
-                    }
-                else
-                //空白でなかったら
-                    fake_y++;
-                    if (fake_y > rim_y)
-                    {
-                        break;
-                    }
-                    
-            　　    for (int x = 1; x < nx.maxx; x++)
-                    {
-                        //label1.Text = fake_y.ToString();
-                        
-                    dataGridView1[x+1, fake_y-1].Value =arr[x, y];//配列arをグリッドx+1して2、0から並べる
-                        //arr[x, y] = ar[x, fake_y];
+                    dataGridView1[x, y].Value =ar[x, y];//配列arをグリッドに並べる
                     }                     
                 }
             }
- 
+           
 
         }
 

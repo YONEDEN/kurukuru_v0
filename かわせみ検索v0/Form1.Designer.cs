@@ -92,24 +92,51 @@
             this.TextBox2 = new System.Windows.Forms.TextBox();
             this.Label1 = new System.Windows.Forms.Label();
             this.TextBox1 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.GroupBox3.SuspendLayout();
             this.GroupBox2.SuspendLayout();
             this.GroupBox1.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            this.groupBox7.SuspendLayout();
             this.SuspendLayout();
             // 
             // TextBox41
             // 
-            this.TextBox41.Location = new System.Drawing.Point(13, 89);
+            this.TextBox41.Location = new System.Drawing.Point(124, 87);
             this.TextBox41.Name = "TextBox41";
-            this.TextBox41.Size = new System.Drawing.Size(159, 19);
+            this.TextBox41.Size = new System.Drawing.Size(101, 19);
             this.TextBox41.TabIndex = 56;
             this.TextBox41.Text = "登録日";
             // 
             // TextBox27
             // 
-            this.TextBox27.Location = new System.Drawing.Point(177, 141);
+            this.TextBox27.Location = new System.Drawing.Point(265, 144);
             this.TextBox27.Name = "TextBox27";
-            this.TextBox27.Size = new System.Drawing.Size(159, 19);
+            this.TextBox27.Size = new System.Drawing.Size(105, 19);
             this.TextBox27.TabIndex = 39;
             this.TextBox27.Text = "ふれあい保険";
             // 
@@ -154,15 +181,15 @@
             // 
             // TextBox26
             // 
-            this.TextBox26.Location = new System.Drawing.Point(12, 141);
+            this.TextBox26.Location = new System.Drawing.Point(87, 144);
             this.TextBox26.Name = "TextBox26";
-            this.TextBox26.Size = new System.Drawing.Size(159, 19);
+            this.TextBox26.Size = new System.Drawing.Size(96, 19);
             this.TextBox26.TabIndex = 38;
             this.TextBox26.Text = "掲示板HP";
             // 
             // TextBox42
             // 
-            this.TextBox42.Location = new System.Drawing.Point(180, 89);
+            this.TextBox42.Location = new System.Drawing.Point(328, 86);
             this.TextBox42.Name = "TextBox42";
             this.TextBox42.Size = new System.Drawing.Size(159, 19);
             this.TextBox42.TabIndex = 57;
@@ -178,17 +205,17 @@
             // 
             // TextBox25
             // 
-            this.TextBox25.Location = new System.Drawing.Point(178, 116);
+            this.TextBox25.Location = new System.Drawing.Point(266, 119);
             this.TextBox25.Name = "TextBox25";
-            this.TextBox25.Size = new System.Drawing.Size(159, 19);
+            this.TextBox25.Size = new System.Drawing.Size(105, 19);
             this.TextBox25.TabIndex = 37;
             this.TextBox25.Text = "レターケース利用番号";
             // 
             // TextBox24
             // 
-            this.TextBox24.Location = new System.Drawing.Point(12, 116);
+            this.TextBox24.Location = new System.Drawing.Point(87, 119);
             this.TextBox24.Name = "TextBox24";
-            this.TextBox24.Size = new System.Drawing.Size(159, 19);
+            this.TextBox24.Size = new System.Drawing.Size(96, 19);
             this.TextBox24.TabIndex = 36;
             this.TextBox24.Text = "ロッカー利用番号";
             // 
@@ -210,37 +237,39 @@
             // 
             // Button1
             // 
-            this.Button1.Location = new System.Drawing.Point(610, 11);
+            this.Button1.Location = new System.Drawing.Point(876, 11);
             this.Button1.Name = "Button1";
             this.Button1.Size = new System.Drawing.Size(75, 23);
             this.Button1.TabIndex = 106;
             this.Button1.Text = "検索実行";
             this.Button1.UseVisualStyleBackColor = true;
+            this.Button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // TextBox37
             // 
-            this.TextBox37.Location = new System.Drawing.Point(13, 64);
+            this.TextBox37.Location = new System.Drawing.Point(124, 62);
             this.TextBox37.Name = "TextBox37";
-            this.TextBox37.Size = new System.Drawing.Size(159, 19);
+            this.TextBox37.Size = new System.Drawing.Size(101, 19);
             this.TextBox37.TabIndex = 52;
             this.TextBox37.Text = "登録決裁日";
             // 
             // TextBox31
             // 
-            this.TextBox31.Location = new System.Drawing.Point(13, 39);
+            this.TextBox31.Location = new System.Drawing.Point(124, 37);
             this.TextBox31.Name = "TextBox31";
-            this.TextBox31.Size = new System.Drawing.Size(159, 19);
+            this.TextBox31.Size = new System.Drawing.Size(101, 19);
             this.TextBox31.TabIndex = 51;
             this.TextBox31.Text = "登録行推受付日";
             // 
             // Button4
             // 
-            this.Button4.Location = new System.Drawing.Point(697, 11);
+            this.Button4.Location = new System.Drawing.Point(963, 11);
             this.Button4.Name = "Button4";
             this.Button4.Size = new System.Drawing.Size(75, 23);
             this.Button4.TabIndex = 107;
             this.Button4.Text = "リスト表示";
             this.Button4.UseVisualStyleBackColor = true;
+            this.Button4.Click += new System.EventHandler(this.Button4_Click);
             // 
             // RadioButton3
             // 
@@ -324,9 +353,9 @@
             // 
             // TextBox30
             // 
-            this.TextBox30.Location = new System.Drawing.Point(13, 14);
+            this.TextBox30.Location = new System.Drawing.Point(124, 12);
             this.TextBox30.Name = "TextBox30";
-            this.TextBox30.Size = new System.Drawing.Size(159, 19);
+            this.TextBox30.Size = new System.Drawing.Size(101, 19);
             this.TextBox30.TabIndex = 50;
             this.TextBox30.Text = "登録センター受付日";
             // 
@@ -338,7 +367,7 @@
             this.GroupBox3.Controls.Add(this.TextBox32);
             this.GroupBox3.Controls.Add(this.TextBox33);
             this.GroupBox3.Controls.Add(this.TextBox34);
-            this.GroupBox3.Location = new System.Drawing.Point(514, 101);
+            this.GroupBox3.Location = new System.Drawing.Point(626, 100);
             this.GroupBox3.Name = "GroupBox3";
             this.GroupBox3.Size = new System.Drawing.Size(353, 118);
             this.GroupBox3.TabIndex = 105;
@@ -347,20 +376,29 @@
             // 
             // GroupBox2
             // 
+            this.GroupBox2.Controls.Add(this.label29);
+            this.GroupBox2.Controls.Add(this.label28);
+            this.GroupBox2.Controls.Add(this.label27);
+            this.GroupBox2.Controls.Add(this.label26);
+            this.GroupBox2.Controls.Add(this.label25);
             this.GroupBox2.Controls.Add(this.TextBox42);
             this.GroupBox2.Controls.Add(this.TextBox41);
             this.GroupBox2.Controls.Add(this.TextBox37);
             this.GroupBox2.Controls.Add(this.TextBox31);
             this.GroupBox2.Controls.Add(this.TextBox30);
-            this.GroupBox2.Location = new System.Drawing.Point(514, 417);
+            this.GroupBox2.Location = new System.Drawing.Point(626, 408);
             this.GroupBox2.Name = "GroupBox2";
-            this.GroupBox2.Size = new System.Drawing.Size(351, 111);
+            this.GroupBox2.Size = new System.Drawing.Size(513, 111);
             this.GroupBox2.TabIndex = 104;
             this.GroupBox2.TabStop = false;
-            this.GroupBox2.Text = "事務処理データ";
+            this.GroupBox2.Text = "登録処理データ";
             // 
             // GroupBox1
             // 
+            this.GroupBox1.Controls.Add(this.label24);
+            this.GroupBox1.Controls.Add(this.label23);
+            this.GroupBox1.Controls.Add(this.label22);
+            this.GroupBox1.Controls.Add(this.label21);
             this.GroupBox1.Controls.Add(this.TextBox27);
             this.GroupBox1.Controls.Add(this.TextBox26);
             this.GroupBox1.Controls.Add(this.TextBox25);
@@ -375,27 +413,27 @@
             this.GroupBox1.Controls.Add(this.Label7);
             this.GroupBox1.Controls.Add(this.Label6);
             this.GroupBox1.Controls.Add(this.Label5);
-            this.GroupBox1.Location = new System.Drawing.Point(514, 235);
+            this.GroupBox1.Location = new System.Drawing.Point(626, 224);
             this.GroupBox1.Name = "GroupBox1";
-            this.GroupBox1.Size = new System.Drawing.Size(353, 176);
+            this.GroupBox1.Size = new System.Drawing.Size(381, 176);
             this.GroupBox1.TabIndex = 103;
             this.GroupBox1.TabStop = false;
             this.GroupBox1.Text = "情報公開";
             // 
             // TextBox44
             // 
-            this.TextBox44.Location = new System.Drawing.Point(528, 536);
+            this.TextBox44.Location = new System.Drawing.Point(626, 535);
             this.TextBox44.Multiline = true;
             this.TextBox44.Name = "TextBox44";
             this.TextBox44.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.TextBox44.Size = new System.Drawing.Size(326, 101);
+            this.TextBox44.Size = new System.Drawing.Size(509, 101);
             this.TextBox44.TabIndex = 102;
             this.TextBox44.Text = "メモ";
             // 
             // Label11
             // 
             this.Label11.AutoSize = true;
-            this.Label11.Location = new System.Drawing.Point(526, 49);
+            this.Label11.Location = new System.Drawing.Point(629, 42);
             this.Label11.Name = "Label11";
             this.Label11.Size = new System.Drawing.Size(74, 12);
             this.Label11.TabIndex = 101;
@@ -403,16 +441,17 @@
             // 
             // Button3
             // 
-            this.Button3.Location = new System.Drawing.Point(516, 11);
+            this.Button3.Location = new System.Drawing.Point(782, 11);
             this.Button3.Name = "Button3";
             this.Button3.Size = new System.Drawing.Size(75, 23);
             this.Button3.TabIndex = 100;
             this.Button3.Text = "検索モード";
             this.Button3.UseVisualStyleBackColor = true;
+            this.Button3.Click += new System.EventHandler(this.Button3_Click);
             // 
             // TextBox43
             // 
-            this.TextBox43.Location = new System.Drawing.Point(417, 77);
+            this.TextBox43.Location = new System.Drawing.Point(500, 82);
             this.TextBox43.Name = "TextBox43";
             this.TextBox43.Size = new System.Drawing.Size(79, 19);
             this.TextBox43.TabIndex = 99;
@@ -420,16 +459,17 @@
             // 
             // Button2
             // 
-            this.Button2.Location = new System.Drawing.Point(786, 11);
+            this.Button2.Location = new System.Drawing.Point(1052, 11);
             this.Button2.Name = "Button2";
             this.Button2.Size = new System.Drawing.Size(84, 23);
             this.Button2.TabIndex = 98;
             this.Button2.Text = "ファイル更新";
             this.Button2.UseVisualStyleBackColor = true;
+            this.Button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // TextBox40
             // 
-            this.TextBox40.Location = new System.Drawing.Point(417, 52);
+            this.TextBox40.Location = new System.Drawing.Point(500, 57);
             this.TextBox40.Name = "TextBox40";
             this.TextBox40.Size = new System.Drawing.Size(79, 19);
             this.TextBox40.TabIndex = 97;
@@ -437,7 +477,7 @@
             // 
             // TextBox39
             // 
-            this.TextBox39.Location = new System.Drawing.Point(372, 224);
+            this.TextBox39.Location = new System.Drawing.Point(383, 109);
             this.TextBox39.Name = "TextBox39";
             this.TextBox39.Size = new System.Drawing.Size(101, 19);
             this.TextBox39.TabIndex = 96;
@@ -445,7 +485,7 @@
             // 
             // TextBox38
             // 
-            this.TextBox38.Location = new System.Drawing.Point(332, 52);
+            this.TextBox38.Location = new System.Drawing.Point(415, 57);
             this.TextBox38.Name = "TextBox38";
             this.TextBox38.Size = new System.Drawing.Size(79, 19);
             this.TextBox38.TabIndex = 95;
@@ -453,15 +493,15 @@
             // 
             // TextBox35
             // 
-            this.TextBox35.Location = new System.Drawing.Point(91, 128);
+            this.TextBox35.Location = new System.Drawing.Point(62, 15);
             this.TextBox35.Name = "TextBox35";
-            this.TextBox35.Size = new System.Drawing.Size(249, 19);
+            this.TextBox35.Size = new System.Drawing.Size(194, 19);
             this.TextBox35.TabIndex = 94;
             this.TextBox35.Text = "連絡先氏名ふりがな";
             // 
             // TextBox21
             // 
-            this.TextBox21.Location = new System.Drawing.Point(90, 612);
+            this.TextBox21.Location = new System.Drawing.Point(173, 640);
             this.TextBox21.Name = "TextBox21";
             this.TextBox21.Size = new System.Drawing.Size(192, 19);
             this.TextBox21.TabIndex = 93;
@@ -469,49 +509,49 @@
             // 
             // TextBox20
             // 
-            this.TextBox20.Location = new System.Drawing.Point(305, 511);
+            this.TextBox20.Location = new System.Drawing.Point(113, 13);
             this.TextBox20.Name = "TextBox20";
-            this.TextBox20.Size = new System.Drawing.Size(192, 19);
+            this.TextBox20.Size = new System.Drawing.Size(136, 19);
             this.TextBox20.TabIndex = 92;
             this.TextBox20.Text = "会報発行頻度";
             // 
             // TextBox19
             // 
-            this.TextBox19.Location = new System.Drawing.Point(305, 486);
+            this.TextBox19.Location = new System.Drawing.Point(42, 13);
             this.TextBox19.Name = "TextBox19";
-            this.TextBox19.Size = new System.Drawing.Size(192, 19);
+            this.TextBox19.Size = new System.Drawing.Size(65, 19);
             this.TextBox19.TabIndex = 91;
             this.TextBox19.Text = "会報有無";
             // 
             // TextBox18
             // 
-            this.TextBox18.Location = new System.Drawing.Point(90, 535);
+            this.TextBox18.Location = new System.Drawing.Point(165, 563);
             this.TextBox18.Multiline = true;
             this.TextBox18.Name = "TextBox18";
             this.TextBox18.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.TextBox18.Size = new System.Drawing.Size(407, 71);
+            this.TextBox18.Size = new System.Drawing.Size(426, 71);
             this.TextBox18.TabIndex = 90;
             this.TextBox18.Text = "団体PR";
             // 
             // TextBox17
             // 
-            this.TextBox17.Location = new System.Drawing.Point(90, 485);
+            this.TextBox17.Location = new System.Drawing.Point(65, 12);
             this.TextBox17.Name = "TextBox17";
-            this.TextBox17.Size = new System.Drawing.Size(192, 19);
+            this.TextBox17.Size = new System.Drawing.Size(85, 19);
             this.TextBox17.TabIndex = 89;
             this.TextBox17.Text = "個人会費";
             // 
             // TextBox16
             // 
-            this.TextBox16.Location = new System.Drawing.Point(90, 510);
+            this.TextBox16.Location = new System.Drawing.Point(185, 13);
             this.TextBox16.Name = "TextBox16";
-            this.TextBox16.Size = new System.Drawing.Size(192, 19);
+            this.TextBox16.Size = new System.Drawing.Size(103, 19);
             this.TextBox16.TabIndex = 88;
             this.TextBox16.Text = "法人会費";
             // 
             // TextBox15
             // 
-            this.TextBox15.Location = new System.Drawing.Point(90, 461);
+            this.TextBox15.Location = new System.Drawing.Point(78, 121);
             this.TextBox15.Name = "TextBox15";
             this.TextBox15.Size = new System.Drawing.Size(407, 19);
             this.TextBox15.TabIndex = 87;
@@ -519,7 +559,7 @@
             // 
             // TextBox14
             // 
-            this.TextBox14.Location = new System.Drawing.Point(90, 436);
+            this.TextBox14.Location = new System.Drawing.Point(78, 96);
             this.TextBox14.Name = "TextBox14";
             this.TextBox14.Size = new System.Drawing.Size(407, 19);
             this.TextBox14.TabIndex = 86;
@@ -527,7 +567,7 @@
             // 
             // TextBox13
             // 
-            this.TextBox13.Location = new System.Drawing.Point(161, 52);
+            this.TextBox13.Location = new System.Drawing.Point(244, 57);
             this.TextBox13.Name = "TextBox13";
             this.TextBox13.Size = new System.Drawing.Size(165, 19);
             this.TextBox13.TabIndex = 85;
@@ -535,7 +575,7 @@
             // 
             // TextBox12
             // 
-            this.TextBox12.Location = new System.Drawing.Point(91, 52);
+            this.TextBox12.Location = new System.Drawing.Point(174, 57);
             this.TextBox12.Name = "TextBox12";
             this.TextBox12.Size = new System.Drawing.Size(64, 19);
             this.TextBox12.TabIndex = 84;
@@ -543,7 +583,7 @@
             // 
             // TextBox11
             // 
-            this.TextBox11.Location = new System.Drawing.Point(90, 359);
+            this.TextBox11.Location = new System.Drawing.Point(78, 19);
             this.TextBox11.Multiline = true;
             this.TextBox11.Name = "TextBox11";
             this.TextBox11.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -554,7 +594,7 @@
             // TextBox10
             // 
             this.TextBox10.BackColor = System.Drawing.SystemColors.Window;
-            this.TextBox10.Location = new System.Drawing.Point(90, 283);
+            this.TextBox10.Location = new System.Drawing.Point(168, 294);
             this.TextBox10.Multiline = true;
             this.TextBox10.Name = "TextBox10";
             this.TextBox10.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -573,23 +613,25 @@
             // 
             // TextBox9
             // 
-            this.TextBox9.Location = new System.Drawing.Point(250, 199);
+            this.TextBox9.Location = new System.Drawing.Point(331, 84);
             this.TextBox9.Name = "TextBox9";
             this.TextBox9.Size = new System.Drawing.Size(153, 19);
             this.TextBox9.TabIndex = 80;
             this.TextBox9.Text = "連絡先FAX";
+            this.TextBox9.TextChanged += new System.EventHandler(this.TextBox9_TextChanged);
             // 
             // TextBox8
             // 
-            this.TextBox8.Location = new System.Drawing.Point(91, 174);
+            this.TextBox8.Location = new System.Drawing.Point(62, 59);
             this.TextBox8.Name = "TextBox8";
-            this.TextBox8.Size = new System.Drawing.Size(103, 19);
+            this.TextBox8.Size = new System.Drawing.Size(87, 19);
             this.TextBox8.TabIndex = 79;
             this.TextBox8.Text = "連絡先郵便番号";
+            this.TextBox8.TextChanged += new System.EventHandler(this.TextBox8_TextChanged);
             // 
             // TextBox7
             // 
-            this.TextBox7.Location = new System.Drawing.Point(91, 249);
+            this.TextBox7.Location = new System.Drawing.Point(62, 134);
             this.TextBox7.Name = "TextBox7";
             this.TextBox7.Size = new System.Drawing.Size(249, 19);
             this.TextBox7.TabIndex = 78;
@@ -597,7 +639,7 @@
             // 
             // TextBox6
             // 
-            this.TextBox6.Location = new System.Drawing.Point(91, 224);
+            this.TextBox6.Location = new System.Drawing.Point(62, 109);
             this.TextBox6.Name = "TextBox6";
             this.TextBox6.Size = new System.Drawing.Size(249, 19);
             this.TextBox6.TabIndex = 77;
@@ -605,25 +647,27 @@
             // 
             // TextBox5
             // 
-            this.TextBox5.Location = new System.Drawing.Point(91, 199);
+            this.TextBox5.Location = new System.Drawing.Point(62, 84);
             this.TextBox5.Name = "TextBox5";
             this.TextBox5.Size = new System.Drawing.Size(153, 19);
             this.TextBox5.TabIndex = 76;
             this.TextBox5.Text = "連絡先電話";
+            this.TextBox5.TextChanged += new System.EventHandler(this.TextBox5_TextChanged);
             // 
             // TextBox4
             // 
-            this.TextBox4.Location = new System.Drawing.Point(200, 174);
+            this.TextBox4.Location = new System.Drawing.Point(155, 59);
             this.TextBox4.Name = "TextBox4";
-            this.TextBox4.Size = new System.Drawing.Size(249, 19);
+            this.TextBox4.Size = new System.Drawing.Size(261, 19);
             this.TextBox4.TabIndex = 75;
             this.TextBox4.Text = "連絡先住所";
+            this.TextBox4.TextChanged += new System.EventHandler(this.TextBox4_TextChanged);
             // 
             // TextBox3
             // 
-            this.TextBox3.Location = new System.Drawing.Point(91, 149);
+            this.TextBox3.Location = new System.Drawing.Point(62, 36);
             this.TextBox3.Name = "TextBox3";
-            this.TextBox3.Size = new System.Drawing.Size(249, 19);
+            this.TextBox3.Size = new System.Drawing.Size(194, 19);
             this.TextBox3.TabIndex = 74;
             this.TextBox3.Text = "連絡先氏名";
             // 
@@ -647,7 +691,7 @@
             // 
             // TextBox2
             // 
-            this.TextBox2.Location = new System.Drawing.Point(91, 77);
+            this.TextBox2.Location = new System.Drawing.Point(174, 82);
             this.TextBox2.Name = "TextBox2";
             this.TextBox2.Size = new System.Drawing.Size(300, 19);
             this.TextBox2.TabIndex = 71;
@@ -665,17 +709,254 @@
             // 
             // TextBox1
             // 
-            this.TextBox1.Location = new System.Drawing.Point(91, 100);
+            this.TextBox1.Location = new System.Drawing.Point(174, 105);
             this.TextBox1.Name = "TextBox1";
             this.TextBox1.Size = new System.Drawing.Size(300, 19);
             this.TextBox1.TabIndex = 69;
             this.TextBox1.Text = "団体名";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(96, 60);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(53, 12);
+            this.label4.TabIndex = 108;
+            this.label4.Text = "団体番号";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(96, 105);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(41, 12);
+            this.label10.TabIndex = 109;
+            this.label10.Text = "団体名";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(95, 293);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(63, 12);
+            this.label13.TabIndex = 111;
+            this.label13.Text = "発足の目的";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(16, 22);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(29, 12);
+            this.label14.TabIndex = 112;
+            this.label14.Text = "内容";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(16, 99);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(29, 12);
+            this.label15.TabIndex = 113;
+            this.label15.Text = "場所";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(16, 124);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(29, 12);
+            this.label16.TabIndex = 114;
+            this.label16.Text = "頻度";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(96, 563);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(44, 12);
+            this.label19.TabIndex = 117;
+            this.label19.Text = "団体PR";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(96, 643);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(53, 12);
+            this.label20.TabIndex = 118;
+            this.label20.Text = "新規入会";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(12, 122);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(40, 12);
+            this.label21.TabIndex = 40;
+            this.label21.Text = "ロッカー";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(12, 147);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(56, 12);
+            this.label22.TabIndex = 41;
+            this.label22.Text = "掲示板HP";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(193, 122);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(60, 12);
+            this.label23.TabIndex = 42;
+            this.label23.Text = "レターケース";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(193, 147);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(70, 12);
+            this.label24.TabIndex = 43;
+            this.label24.Text = "ふれあい保険";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(12, 15);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(78, 12);
+            this.label25.TabIndex = 44;
+            this.label25.Text = "センター受付日";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(12, 40);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(101, 12);
+            this.label26.TabIndex = 58;
+            this.label26.Text = "行政推進課受付日";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(12, 65);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(65, 12);
+            this.label27.TabIndex = 59;
+            this.label27.Text = "登録決裁日";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(12, 89);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(41, 12);
+            this.label28.TabIndex = 60;
+            this.label28.Text = "登録日";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(231, 89);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(93, 12);
+            this.label29.TabIndex = 61;
+            this.label29.Text = "カード作成担当者";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.TextBox39);
+            this.groupBox4.Controls.Add(this.TextBox35);
+            this.groupBox4.Controls.Add(this.TextBox9);
+            this.groupBox4.Controls.Add(this.TextBox8);
+            this.groupBox4.Controls.Add(this.TextBox7);
+            this.groupBox4.Controls.Add(this.TextBox6);
+            this.groupBox4.Controls.Add(this.TextBox5);
+            this.groupBox4.Controls.Add(this.TextBox4);
+            this.groupBox4.Controls.Add(this.TextBox3);
+            this.groupBox4.Location = new System.Drawing.Point(87, 130);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(503, 156);
+            this.groupBox4.TabIndex = 119;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "連絡先情報";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.TextBox20);
+            this.groupBox5.Controls.Add(this.TextBox19);
+            this.groupBox5.Location = new System.Drawing.Point(337, 522);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(254, 35);
+            this.groupBox5.TabIndex = 120;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "会報";
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.label18);
+            this.groupBox6.Controls.Add(this.label12);
+            this.groupBox6.Controls.Add(this.TextBox17);
+            this.groupBox6.Controls.Add(this.TextBox16);
+            this.groupBox6.Location = new System.Drawing.Point(32, 522);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(288, 35);
+            this.groupBox6.TabIndex = 121;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "会費";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(30, 15);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(29, 12);
+            this.label12.TabIndex = 122;
+            this.label12.Text = "個人";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(156, 16);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(29, 12);
+            this.label18.TabIndex = 123;
+            this.label18.Text = "法人";
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.label16);
+            this.groupBox7.Controls.Add(this.label15);
+            this.groupBox7.Controls.Add(this.label14);
+            this.groupBox7.Controls.Add(this.TextBox15);
+            this.groupBox7.Controls.Add(this.TextBox14);
+            this.groupBox7.Controls.Add(this.TextBox11);
+            this.groupBox7.Location = new System.Drawing.Point(87, 371);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(503, 149);
+            this.groupBox7.TabIndex = 122;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "活動状況";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(882, 645);
+            this.ClientSize = new System.Drawing.Size(1148, 676);
+            this.Controls.Add(this.groupBox7);
+            this.Controls.Add(this.groupBox6);
+            this.Controls.Add(this.groupBox5);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.Button1);
             this.Controls.Add(this.Button4);
             this.Controls.Add(this.GroupBox3);
@@ -687,29 +968,13 @@
             this.Controls.Add(this.TextBox43);
             this.Controls.Add(this.Button2);
             this.Controls.Add(this.TextBox40);
-            this.Controls.Add(this.TextBox39);
             this.Controls.Add(this.TextBox38);
-            this.Controls.Add(this.TextBox35);
             this.Controls.Add(this.TextBox21);
-            this.Controls.Add(this.TextBox20);
-            this.Controls.Add(this.TextBox19);
             this.Controls.Add(this.TextBox18);
-            this.Controls.Add(this.TextBox17);
-            this.Controls.Add(this.TextBox16);
-            this.Controls.Add(this.TextBox15);
-            this.Controls.Add(this.TextBox14);
             this.Controls.Add(this.TextBox13);
             this.Controls.Add(this.TextBox12);
-            this.Controls.Add(this.TextBox11);
             this.Controls.Add(this.TextBox10);
             this.Controls.Add(this.Label9);
-            this.Controls.Add(this.TextBox9);
-            this.Controls.Add(this.TextBox8);
-            this.Controls.Add(this.TextBox7);
-            this.Controls.Add(this.TextBox6);
-            this.Controls.Add(this.TextBox5);
-            this.Controls.Add(this.TextBox4);
-            this.Controls.Add(this.TextBox3);
             this.Controls.Add(this.Label3);
             this.Controls.Add(this.Label2);
             this.Controls.Add(this.TextBox2);
@@ -723,6 +988,14 @@
             this.GroupBox2.PerformLayout();
             this.GroupBox1.ResumeLayout(false);
             this.GroupBox1.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -794,6 +1067,29 @@
         internal System.Windows.Forms.TextBox TextBox2;
         internal System.Windows.Forms.Label Label1;
         internal System.Windows.Forms.TextBox TextBox1;
+        internal System.Windows.Forms.Label label29;
+        internal System.Windows.Forms.Label label28;
+        internal System.Windows.Forms.Label label27;
+        internal System.Windows.Forms.Label label26;
+        internal System.Windows.Forms.Label label25;
+        internal System.Windows.Forms.Label label24;
+        internal System.Windows.Forms.Label label23;
+        internal System.Windows.Forms.Label label22;
+        internal System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.GroupBox groupBox7;
     }
 }
 
